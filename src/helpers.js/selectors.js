@@ -73,6 +73,6 @@ export function getInterview(state, interview) {
     student: interview.student,
     interviewer: interviewerObj,
   }
-  console.log("getInterview results: ", result);
+  //console.log("getInterview results: ", result);
   return result;
 }
