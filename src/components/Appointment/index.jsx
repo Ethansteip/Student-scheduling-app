@@ -8,7 +8,6 @@ import Confirm from 'components/Appointment/Confirm';
 import Error from 'components/Appointment/Error';
 import "components/Appointment/styles.scss";
 import useVisualMode from "hooks/useVisualMode";
-import axios from 'axios';
 
 const EMPTY = "Empty";
 const SHOW = "SHOW";
