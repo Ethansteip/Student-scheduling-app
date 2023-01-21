@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Ethansteip/scheduler">
-    <img src="" alt="Picture of a calander and clock, scheduler logo." width="300" style="border-radius:10px;">
+    <img src="https://github.com/Ethansteip/scheduler/blob/master/docs/Ethan_Steip_a_professional_and_minamilist_logo_of_a_scheduling__a5fb0746-7d46-4677-83a5-9e83a6ce15b6.png?raw=true" alt="Picture of a calander and clock, scheduler logo." width="200" style="border-radius:10px;">
   </a>
 
 <h2 align="center">Scheduler App</h2>
@@ -49,13 +49,13 @@
 <br>
 The app was built with React + Axios + Webpack and uses a third-party <a href="https://github.com/lighthouse-labs/scheduler-api">Express + Postgres backend</a> to popoulate the app with test data. I've created a custom UseApplicationData hook to manage the applications state, and the app has signifigant test coverge using jest.<p>
 
-!["Exmaple image of scheduling app"](https://github.com/Ethansteip/tweeter/blob/master/docs/tweet-example.png?raw=true)
+!["Exmaple image of scheduling app"](https://github.com/Ethansteip/scheduler/blob/master/docs/Screen%20Shot%202023-01-21%20at%201.10.08%20PM.png?raw=true)
 <br>
 <br>
-!["Creating an appointment"](https://github.com/Ethansteip/tweeter/blob/master/docs/Tweet-input-with-text.png?raw=true)
+!["Creating an appointment"](https://github.com/Ethansteip/scheduler/blob/master/docs/Screen%20Shot%202023-01-21%20at%201.10.27%20PM.png?raw=true)
 <br>
 <br>
-!["Booked appointments"](https://github.com/Ethansteip/tweeter/blob/master/docs/Desktop-layout.png?raw=true)
+!["Deleting appointments"](https://github.com/Ethansteip/scheduler/blob/master/docs/Screen%20Shot%202023-01-21%20at%201.12.05%20PM.png?raw=true)
 <br>
 <br>
 
