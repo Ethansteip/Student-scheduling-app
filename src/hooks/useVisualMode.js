@@ -17,7 +17,6 @@ export default function useVisualMode(initial) {
     function back() {
 
       if (history.length <= 1) {
-        console.log('sorry, you cant transition that far');
       } else {
         history.pop();
         setMode(history[history.length - 1]);

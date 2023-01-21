@@ -17,7 +17,6 @@ import Application from "components/Application";
 /*
   A test that renders a React Component
 */
-
-test.skip("renders without crashing", () => {
+it("renders without crashing", () => {
   render(<Application />);
 });
