@@ -44,7 +44,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About Scheduler App
 
-<p>Scheduler is a React application that allows students to easily schedule and manage appointments with their mentors and view availability in real-time. Students have the option to book an appointment during any weekday as long as their is availability. Students are also able to update the appointment information, choose their interviewer or cancel the appointment if need be. 
+<p>Scheduler is a React application that allows students to easily schedule and manage appointments with their mentors and view availability in real-time. Students have the option to book an appointment during any weekday as long as there is availability. Students are also able to update the appointment information, choose their interviewer or cancel the appointment if need be. 
 <br>
 <br>
 The app was built with React + Axios + Webpack and uses a third-party <a href="https://github.com/lighthouse-labs/scheduler-api">Express + Postgres backend</a> to popoulate the app with test data. I've created a custom UseApplicationData hook to manage the applications state, and the app has signifigant test coverge using jest.<p>
