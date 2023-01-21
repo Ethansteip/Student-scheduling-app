@@ -52,7 +52,7 @@ export default function useApplicationData() {
     };
 
     //Update the api with a put request
-    return axios.delete(`/api/appointments/${id}`)
+    return axios.delete(`api/appointments/${id}`)
       .then(() => {
         const newState = {
           ...state,
@@ -79,7 +79,7 @@ export default function useApplicationData() {
     };
 
     //Update the api with a put request
-    return axios.put(`/api/appointments/${id}`, {interview})
+    return axios.put(`api/appointments/${id}`, {interview})
       .then(() => {
         const newState = {
           ...state,
