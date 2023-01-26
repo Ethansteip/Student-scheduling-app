@@ -9,7 +9,7 @@ import Error from 'components/Appointment/Error';
 import "components/Appointment/styles.scss";
 import useVisualMode from "hooks/useVisualMode";
 
-const EMPTY = "Empty";
+const EMPTY = "EMPTY";
 const SHOW = "SHOW";
 const CREATE = "CREATE";
 const SAVING = "SAVING";
@@ -67,13 +67,13 @@ export default function Appointment(props) {
           onEdit={() => transition(EDIT)}
         />
       )}
-      {mode === CREATE && <Form onSave={save} interviewers={props.interviewers} onCancel={() => back()} />}
+      {mode === CREATE && <Form onSave={save} interviewers={props.interviewers} onCancel={back} />}
       {mode === SAVING && <Status message={"Saving Appointment"}/>}
       {mode === DELETING && <Status message={"Deleting"}/>}
       {mode === CONFIRM && <Confirm onCancel={back} onConfirm={deleteInterview}/>}
       {mode === EDIT && <Form onSave={save} student={props.interview.student} interviewers={props.interviewers} interviewer={props.interview.interviewer.id} onCancel={() => back()} />}
-      {mode === ERROR_DELETE && <Error onClose={() => transition(SHOW)} message={"Error while trying to delete appointment."}/>}
-      {mode === ERROR_SAVE && <Error onClose={() => transition(EDIT)} message={"Error while trying to save appointment."}/>}
+      {mode === ERROR_DELETE && <Error onClose={back} message={"Error while trying to delete appointment."}/>}
+      {mode === ERROR_SAVE && <Error onClose={back} message={"Error while trying to save appointment."}/>}
     </article>
   );
 }

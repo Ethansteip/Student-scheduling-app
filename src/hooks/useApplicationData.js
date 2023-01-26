@@ -25,12 +25,12 @@ export default function useApplicationData() {
       axios.get('api/interviewers'),
     ]).then((all) => {
       const [daysData, appointmentData, interviewersData] = all;
-      setState({
-        ...state,
+      setState(prev => { return {
+        ...prev,
         days: daysData.data,
         appointments: appointmentData.data,
         interviewers: interviewersData.data,
-      })
+      }});
     });
   }, []);
 
@@ -95,7 +95,7 @@ export default function useApplicationData() {
 
       let spotsForAday = 0;
 
-      day.appointments.map((appointmentId) => {
+      day.appointments.forEach((appointmentId) => {
         const appointment = state.appointments[appointmentId];
 
         if (appointment.interview === null) {

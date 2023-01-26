@@ -19,17 +19,19 @@ export function getAppointmentsForDay(state, day) {
 
   const daysArrayAppointmentsId = daysArray[0].appointments;
 
-  const array = [];
+  //const array = [];
 
   const appointmentsArray = daysArrayAppointmentsId.map(id => {
     for (const x of Object.values(state.appointments)) {
-      if (x.id == id) {
-        array.push(x);
+      if (x.id === parseInt(id, 10)) {
+        return x;
+        //array.push(x);
       }
     }
+    return id;
   })
   
-  return array;
+  return appointmentsArray;
 }
 
 export function getInterviewersForDay(state, day) {
@@ -46,7 +48,7 @@ export function getInterviewersForDay(state, day) {
 
   interviewersIds.forEach(id => {
     for (const x of Object.values(state.interviewers)) {
-      if (x.id == id) {
+      if (x.id === parseInt(id, 10)) {
         listOfInterviewers.push(x);
       }
     }
